@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+
+/* General */
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  // background-color: #3E7D25; /* A vivid green background */
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+button:active {
+  background-color: #C9FF8E; /* A vivid green for the button */
+  border: none;
+  width: 42px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 0.2em 0.2em #6BBA70; /* A darker green for button shadow */
+  -webkit-box-shadow: 0.2em 0.2em #6BBA70;
+  -moz-box-shadow: 0.2em 0.2em #6BBA70;
+}
+
+button:focus {
+  translate: 0.2em 0.2em;
+  box-shadow: 0.2em 0.2em #6BBA70 inset;
+  -webkit-box-shadow: 0.2em 0.2em #6BBA70 inset;
+  -moz-box-shadow: 0.2em 0.2em #6BBA70 inset;
+}
+
+/* Clock Body */
+
+.clock-container {
+  background-color: #9FE6A0; /* A vibrant green for the clock container */
+  width: 350px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 10px 10px #4F9E4C; /* A darker green for the clock shadow */
+}
+
+/* Display + Stop/Start/Reset Controls */
+
+#time-left {
+  font-size: 70px;
+  text-align: center;
+  background-color: #5CBB54; /* A bright green for the display background */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px #2E7E31 inset; /* A darker green for the display shadow */
+}
+
+#display-controls {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#timer-label {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 2px;
+  background-color: #5CBB54; /* A bright green for the timer label background */
+  border-radius: 10px;
+  height: 40px;
+  flex: 2;
+  box-shadow: 3px 3px #2E7E31 inset; /* A darker green for the timer label shadow */
+}
+
+#timer-ssr {
+  flex: 1;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-start: end;
+}
+
+/* Timer Length Controls */
+
+.length-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.inc-dec-btn-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 140px;
+  height: 60px;
+}
+
+.break-container,
+.session-container {
+  text-align: center;
+  border: 2px solid #C9FF8E; /* A vivid green for the container borders */
+  padding: 10px;
+  border-radius: 10px;
+  width: 48%;
+}
+
+.timer-length {
+  font-size: 2em;
+}
+
+.break-container,
+.inc-arrow {
+  margin-right: 12px;
+}
